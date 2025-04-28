@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "League Spartan", sans-serif;
+ font-optical-sizing: auto;
+     font-style: normal;
+     text-decoration: none;
+}
+.navbar {
+    background-color: rgb(150, 210, 238);
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    
+
+
+}
+.logo {
+    padding-left: 8%; 
+    padding-top: 15px;
+    align-items: center;
+    height: 55px;
+    width: 55px;
+}
+.right-sidebar ul {
+text-align: right;
+display: flex;
+justify-content: space-between;
+gap: 55px;
+margin-right: 80px;
+list-style: none ;
+font-size: 30px;
+text-transform: capitalize;
+
+
+}
+
+a{
+    text-decoration: none;
+}
+.main-container {
+background-image: url("/images/hero4.png");
+height:100vh;
+
+}
+.left-side  {
+ margin-left: 80px;
+ font-size: 28px;
+ padding: 170px 90px;
+}
+ .product {
+    color: rgb(137, 213, 236);
+}
+.hero-button >img {
+    position: relative;
+}
+.hero-button > p {
+    position: absolute;
+}
+.cards {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  gap: 25px;
+  padding: 50px 50px;
+  height: 200px;
+  
+
+}
+.card1, .card2, .card3, .card4, .card5, .card6 {
+    border: 2px solid rgb(208, 238, 208);
+    box-shadow: 20px rgb(59, 75, 59);
+  
+
+}
+.img-card {
+    padding: 25px 25px;
+}
+.card1 >p{
+    background-color: pink;
+    color:rgb(53, 53, 82);
+    padding: 10px 10px;
+    width: fit-content;
+    text-align: center;
+    margin-left: 50px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.card2 >p{
+    background-color: rgb(173, 201, 173);
+    color:rgb(53, 53, 82);
+    padding: 10px 10px;
+    width: fit-content;
+    text-align: center;
+    margin-left: 50px;
+    font-size: 20px;
+    border-radius: 5px; 
+}
+.card3 >p{
+    background-color: rgb(21, 173, 233);
+    color:rgb(53, 53, 82);
+    padding: 10px 10px;
+    width: fit-content;
+    text-align: center;
+    margin-left: 50px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.card4 >p{
+    background-color: rgb(240, 223, 240);
+    color:rgb(53, 53, 82);
+    padding: 10px 10px;
+    width: fit-content;
+    text-align: center;
+    margin-left: 50px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.card5 >p{
+    background-color:rgb(133, 105, 133);
+    color:rgb(53, 53, 82);
+    padding: 10px 10px;
+    width: fit-content;
+    text-align: center;
+    margin-left: 50px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.card6 >p{
+    background-color: rgb(175, 142, 142);
+    color:rgb(53, 53, 82);
+    padding: 10px 10px;
+    width: fit-content;
+    text-align: center;
+    margin-left: 50px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.sub-heading {
+    text-align: center;
+    padding: 30px 30px;
+}
+.sub-heading > h1{
+    text-align: center;
+    font-size: 70px;
+    
+}
+.sub-heading >h5 {
+    color: darkgray;
+    font-size: 25px;
+    font-weight: 5px;
+}
+.wears {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 15px;
+    
+}
+.img-wear {
+   
+
+}
