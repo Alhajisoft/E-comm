@@ -14,6 +14,7 @@ body {
     display: flex;
     justify-content: space-between;
     height: 80px;
+    position: fixed;
     
 
 
@@ -138,6 +139,11 @@ height:100vh;
     font-size: 20px;
     border-radius: 5px;
 }
+.product-container {
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+}
 .sub-heading {
     text-align: center;
     padding: 30px 30px;
@@ -154,11 +160,37 @@ height:100vh;
 }
 .wears {
     display: grid;
-    grid-template-columns: auto auto auto auto;
-    gap: 15px;
+    grid-template-columns: repeat(4,2fr);
+    gap: 9px;
+    width: 80%;
+    margin: auto;
     
 }
+.wear {
+ background-color: white;
+ height: 500px;
+ width: auto;
+ border-radius: 30px;
+ border: 2px solid red;
+ overflow: hidden;
+}
 .img-wear {
-   
+height: 70%;
+padding: 10px;
+border-radius: 20px;
+overflow: hidden;
+}
+
+.img-wear > img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+.img-note {
+    margin: 1px 6px;
+    line-height: 10px;
+    padding-bottom: 5px;
+    padding-left: 8px;
 
 }
