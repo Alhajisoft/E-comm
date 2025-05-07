@@ -5,83 +5,111 @@ body {
     margin: 0;
     padding: 0;
     font-family: "League Spartan", sans-serif;
- font-optical-sizing: auto;
-     font-style: normal;
-     text-decoration: none;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-decoration: none;
 }
+
 .navbar {
     background-color: rgb(150, 210, 238);
     display: flex;
     justify-content: space-between;
     height: 80px;
     position: fixed;
-    
+    width: 100%;
+
 
 
 }
+
 .logo {
-    padding-left: 8%; 
+    padding-left: 8%;
     padding-top: 15px;
     align-items: center;
     height: 55px;
     width: 55px;
 }
+
 .right-sidebar ul {
-text-align: right;
-display: flex;
-justify-content: space-between;
-gap: 55px;
-margin-right: 80px;
-list-style: none ;
-font-size: 30px;
-text-transform: capitalize;
+    text-align: right;
+    display: flex;
+    justify-content: space-between;
+    gap: 55px;
+    margin-right: 80px;
+    list-style: none;
+    font-size: 30px;
+    text-transform: capitalize;
 
 
 }
 
-a{
+a {
     text-decoration: none;
 }
+
 .main-container {
-background-image: url("/images/hero4.png");
-height:100vh;
+    background-image: url("/images/hero4.png");
+    height: 100vh;
+    width: auto;
 
 }
-.left-side  {
- margin-left: 80px;
- font-size: 28px;
- padding: 170px 90px;
+
+.left-side {
+    margin-left: 80px;
+    font-size: 28px;
+    padding: 170px 90px;
+    font-family: "League Spartan", sans-serif;
 }
- .product {
+
+.product {
     color: rgb(137, 213, 236);
 }
-.hero-button >img {
+
+.hero-button {
     position: relative;
+    display: flex;
+    align-items: center;
 }
-.hero-button > p {
+
+.hero-button>p {
     position: absolute;
+    left: 4%;
+    top: 1%;
 }
+
+.hero-button>img {
+    height: 70px;
+}
+
 .cards {
-  display: grid;
-  grid-template-columns: auto auto auto auto auto auto;
-  gap: 25px;
-  padding: 50px 50px;
-  height: 200px;
-  
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    gap: 25px;
+    padding: 50px 50px;
+    height: 200px;
+
 
 }
-.card1, .card2, .card3, .card4, .card5, .card6 {
+
+.card1,
+.card2,
+.card3,
+.card4,
+.card5,
+.card6 {
     border: 2px solid rgb(208, 238, 208);
-    box-shadow: 20px rgb(59, 75, 59);
-  
+    box-shadow: 20px 20px thine rgb(59, 75, 59);
+
 
 }
+
 .img-card {
     padding: 25px 25px;
 }
-.card1 >p{
+
+.card1>p {
     background-color: pink;
-    color:rgb(53, 53, 82);
+    color: rgb(53, 53, 82);
     padding: 10px 10px;
     width: fit-content;
     text-align: center;
@@ -89,19 +117,21 @@ height:100vh;
     font-size: 20px;
     border-radius: 5px;
 }
-.card2 >p{
+
+.card2>p {
     background-color: rgb(173, 201, 173);
-    color:rgb(53, 53, 82);
+    color: rgb(53, 53, 82);
     padding: 10px 10px;
     width: fit-content;
     text-align: center;
     margin-left: 50px;
     font-size: 20px;
-    border-radius: 5px; 
+    border-radius: 5px;
 }
-.card3 >p{
+
+.card3>p {
     background-color: rgb(21, 173, 233);
-    color:rgb(53, 53, 82);
+    color: rgb(53, 53, 82);
     padding: 10px 10px;
     width: fit-content;
     text-align: center;
@@ -109,9 +139,10 @@ height:100vh;
     font-size: 20px;
     border-radius: 5px;
 }
-.card4 >p{
+
+.card4>p {
     background-color: rgb(240, 223, 240);
-    color:rgb(53, 53, 82);
+    color: rgb(53, 53, 82);
     padding: 10px 10px;
     width: fit-content;
     text-align: center;
@@ -119,9 +150,10 @@ height:100vh;
     font-size: 20px;
     border-radius: 5px;
 }
-.card5 >p{
-    background-color:rgb(133, 105, 133);
-    color:rgb(53, 53, 82);
+
+.card5>p {
+    background-color: rgb(133, 105, 133);
+    color: rgb(53, 53, 82);
     padding: 10px 10px;
     width: fit-content;
     text-align: center;
@@ -129,9 +161,10 @@ height:100vh;
     font-size: 20px;
     border-radius: 5px;
 }
-.card6 >p{
+
+.card6>p {
     background-color: rgb(175, 142, 142);
-    color:rgb(53, 53, 82);
+    color: rgb(53, 53, 82);
     padding: 10px 10px;
     width: fit-content;
     text-align: center;
@@ -139,58 +172,361 @@ height:100vh;
     font-size: 20px;
     border-radius: 5px;
 }
+
 .product-container {
     height: auto;
     width: 100%;
     overflow: hidden;
 }
+
 .sub-heading {
     text-align: center;
     padding: 30px 30px;
 }
-.sub-heading > h1{
+
+.sub-heading>h1 {
     text-align: center;
     font-size: 70px;
-    
+
 }
-.sub-heading >h5 {
+
+.sub-heading>h5 {
     color: darkgray;
     font-size: 25px;
     font-weight: 5px;
 }
+
 .wears {
     display: grid;
-    grid-template-columns: repeat(4,2fr);
-    gap: 9px;
+    grid-template-columns: repeat(4, 2fr);
+    gap: 25px;
     width: 80%;
     margin: auto;
-    
-}
-.wear {
- background-color: white;
- height: 500px;
- width: auto;
- border-radius: 30px;
- border: 2px solid red;
- overflow: hidden;
-}
-.img-wear {
-height: 70%;
-padding: 10px;
-border-radius: 20px;
-overflow: hidden;
+
+
 }
 
-.img-wear > img {
+.wear {
+    background-color: white;
+    height: 600px;
+    width: auto;
+    border-radius: 30px;
+    border: 2px solid rgb(195, 236, 195);
+    overflow: hidden;
+    box-shadow: 10px 10px lightblue solid;
+}
+
+
+.img-wear {
+    height: 70%;
+    padding: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.img-wear>img {
     object-fit: cover;
     height: 100%;
     width: 100%;
     border-radius: 20px;
 }
+
 .img-note {
     margin: 1px 6px;
     line-height: 10px;
     padding-bottom: 5px;
     padding-left: 8px;
+
+}
+
+.cartoon {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.lucide-star-icon {
+    color: #c99f37;
+    fill: #c99f37;
+    /* background-color: yellow; */
+}
+
+.coins {
+    color: rgb(110, 243, 110);
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+
+.shopping-cart {
+    border-radius: 50%;
+    background-color: rgb(202, 240, 202);
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner {
+    height: 35vh;
+    width: 100%;
+    background-image: url("/images/banner/b2.jpg");
+    object-fit: cover;
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+
+.repair-writeup {
+    color: white;
+    text-align: center;
+    padding: 20px 25px;
+}
+
+.repair-writeup>h2 {
+    font-size: 30px;
+
+}
+
+.repair-writeup>h1 {
+    font-size: 50px
+}
+
+.dicount {
+    color: rgb(243, 116, 116);
+}
+
+.button {
+    font-size: 25px;
+    background-color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    display: flex;
+    color: black;
+    transition: background-color o.3s;
+    width: 200px;
+    align-items: center;
+    font-weight: bold;
+    justify-content: center;
+    margin: auto;
+
+}
+
+.button:hover {
+    background-color: aqua;
+}
+
+.button>p {
+    text-align: center;
+}
+
+.Arrivals {
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.shirts {
+    text-align: center;
+    padding: 30px 30px;
+    align-items: center;
+}
+
+.shirts>h1 {
+    font-size: 80px;
+    text-align: center;
+    font-weight: bold;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.shirts>p {
+    color: gray;
+    font-size: 30px;
+    padding: 0 !important;
+    padding: 0 !important;
+
+}
+
+.summer {
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    gap: 25px;
+    width: 80%;
+    margin: auto;
+}
+
+.tShirt {
+    width: auto;
+    height: 600px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: white;
+    border: 2px solid, rgb(187, 235, 187);
+}
+
+.img-tShirts {
+    height: 70%;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px;
+
+}
+
+.img-tShirts>img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+.orange {
+    height: auto;
+    width: 100%;
+    margin-top: 70px;
+    padding-left: 50px;
+    position: relative;
+
+}
+
+.orange-img {
+    width: 70%;
+    height: auto;
+
+
+}
+
+.orange-img>img {
+    width: 90%;
+    height: 500px;
+
+
+
+}
+
+.orange-write {
+    position: absolute;
+    font-size: 30px;
+    padding: 10px;
+    top: 10%;
+    left: 5%;
+    color: white;
+}
+
+button {
+    width: 150px;
+    height: 50px;
+    border: 1px solid white;
+    background-color: transparent;
+    cursor: pointer;
+    transition: font-size 0.3s;
+
+}
+
+button:hover {
+    background-color: green;
+}
+
+.gray {
+    height: auto;
+    width: 100%;
+    padding-left: 50px;
+    position: relative;
+}
+
+.gray-img {
+    height: 100%;
+    width: 80%;
+    margin-top: 10px;
+
+
+}
+
+.gray-img>img {
+    height: 500px;
+    width: 79%;
+}
+
+.gray-write {
+    position: absolute;
+    z-index: 15;
+    font-size: 30px;
+    padding: 10px;
+    top: 50%;
+    left: 5%;
+    color: white;
+}
+
+.lower-area {
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.pre-sale {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    padding-left: 70px;
+    width: 90%;
+    /* margin: auto; */
+    margin-top: 70px;
+    margin-bottom: 40px;
+    /* overflow: hidden; */
+
+
+
+}
+
+.season,
+.spring,
+.trendy {
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.trendy>img {
+    height: 300px;
+    overflow: hidden;
+    object-fit: cover;
+
+
+}
+
+.spring>img {
+    object-fit: cover;
+    overflow: hidden;
+    height: 300px;
+
+}
+
+.season>img {
+    height: 300px;
+}
+
+.season-write {
+    position: absolute;
+    font-size: 20px;
+    top: 40%;
+    left: 10%;
+
+}
+
+.season-write>h2 {
+    color: white;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.season-write>p {
+    color: rgb(252, 88, 88);
+    font-weight: bold;
+    font-size: 29px;
 
 }
